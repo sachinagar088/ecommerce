@@ -5,6 +5,7 @@
         $collection->insert($document);
         return true;
     }
+	#Checking the Email
     
     function chkemail($email){
         global $collection;
@@ -16,6 +17,7 @@
             return false;
         }
     }
+#Setting up the session
     function setsession($email){
      
        
