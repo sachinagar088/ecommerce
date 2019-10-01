@@ -6,7 +6,7 @@ include("includes/db.php");
 
 <html>
 	<head>
-	<title>My Online Shopping Website</title>
+	<title>Online Shopping Website</title>
 	
 	<link rel="stylesheet" href="css/style.css" media="all" />
 	
@@ -21,9 +21,9 @@ include("includes/db.php");
 	<!--Header Container starts here-->
 	<div class="header_wrapper">   
 	
-		
+		<!--
 		<img id="banner" src="images/ad_banner.jpg">
-
+			-->
 	</div>
 	<!--Header ends here-->
 	
@@ -96,14 +96,14 @@ include("includes/db.php");
 			Welcome <?php ?>! <b style="color:yellow">Shopping Cart-</b>
 			Total Item-<?php
 			$sql="SELECT p_id FROM cart";
-if ($result=mysqli_query($conn,$sql))
-  {
-  // Return the number of rows in result set
-  $rowcount=mysqli_num_rows($result);
-  printf($rowcount);
-  // Free result set
-  mysqli_free_result($result);
-  }
+	if ($result=mysqli_query($conn,$sql))
+  		{
+		  // Return the number of rows in result set
+		  $rowcount=mysqli_num_rows($result);
+		  printf($rowcount);
+		  // Free result set
+		  mysqli_free_result($result);
+		}
 
 			?> 
 			

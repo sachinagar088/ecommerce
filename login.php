@@ -15,9 +15,9 @@ include("includes/db.php");
 <!--Header Container starts here-->
 	<div class="header_wrapper">   
 	
-	
+		<!--
 		<img id="banner" src="images/ad_banner.jpg">
-
+		-->
 	</div>
 </div>
 <b><center><h1>LOGIN</h1></center></b>
